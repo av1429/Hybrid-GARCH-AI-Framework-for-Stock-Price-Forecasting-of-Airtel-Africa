@@ -51,6 +51,19 @@ The dataset is **automatically imported** from Yahoo Finance
 
 ---
 
+## 📊 Results & Evaluation
+
+| Model | RMSE | MAE | MAPE (%) | R² |
+|:------|:-----:|:----:|:---------:|:----:|
+| GRU | 3.29 | 2.48 | 2.16 | 0.863 |
+| GRU–GARCH | 3.30 | 2.48 | 2.16 | 0.863 |
+| LSTM | 5.98 | 4.67 | 4.11 | 0.550 |
+| LSTM–GARCH | 5.81 | 4.49 | 4.00 | 0.580 |
+| BiGRU | 5.57 | 4.50 | 4.07 | 0.610 |
+| **GRU–Attention** | **3.26** | **2.07** | **2.13** | **0.890** |
+
+---
+
 ## ✅ Key Insight:
 The GRU–Attention model achieved the most accurate results, outperforming both pure deep learning and GARCH-hybrid models.
 Its attention mechanism effectively captured temporal volatility patterns and short-term dependencies.
